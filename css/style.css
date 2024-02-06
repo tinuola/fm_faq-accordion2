@@ -1,5 +1,8 @@
 :root {
-  --var: value
+  --dark-purple: hsl(292, 42%, 14%);
+  --gray-purple: hsl(292, 16%, 49%);
+  --light-pink: hsl(275, 100%, 97%);
+  --font: 'Work Sans', sans-serif;
 }
 
 /* Accessibility */
@@ -38,7 +41,43 @@ body {
   /* grid-template-rows: 1fr auto; */
   justify-items: center;
   align-items: center;
+  font-family: var(--font);
+  background-color: var(--light-pink);
+  /* background-image: url('/assets/images/background-pattern-mobile.svg'); */
+  background-repeat: no-repeat;
+  background-size: contain;
 }
+
+@media(min-width: 768px){
+  /* body {
+    background-image: url('/assets/images/background-pattern-desktop.svg');
+  } */
+}
+
+.container {
+  background-color: #fff;
+  min-width: 330px;
+  max-width: 600px;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: start;
+}
+
+main {
+
+}
+
+.accordion__trigger {
+  display: flex;
+}
+
+.icon-minus {
+  display: none;
+}
+
 
 .fm-byline {
   font-size: 0.75rem;
