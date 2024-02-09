@@ -45,20 +45,20 @@
         <div class="accordion-group">
           <!-- panel 1 -->
           <section>
-            <h3 class="accordion__header" collapsed>
+            <h3 class="accordion__header">
               <button 
               type="button"
               class="accordion__trigger"
               id="section1"
-              aria-expanded="true"
+              aria-expanded="false"
               aria-controls="section1-panel"
             >
         What is Frontend Mentor, and how will it help me?
-                <span class="accordion-icon icon-plus">
-                  <img src="./assets/images/icon-plus.svg" alt="plus icon">
+                <span class="accordion-icon icon-plus hide">
+                  <img src="./assets/images/icon-plus.svg" alt="">
                 </span>
-                <span class="accordion-icon icon-minus">
-                  <img src="./assets/images/icon-minus.svg" alt="minus icon">
+                <span class="accordion-icon icon-minus show">
+                  <img src="./assets/images/icon-minus.svg" alt="">
                 </span>
               </button>
             </h3>
@@ -76,20 +76,30 @@
           
           <!-- panel 2 -->
           <section>
-            <h3 class="accordion__header" collapsed>
+            <h3 class="accordion__header collapsed">
               <button 
-              type="button"
-              class="accordion__trigger"
-              id="section2"
-              aria-expanded="true"
-              aria-controls="section2-panel"
-            >
+                type="button"
+                class="accordion__trigger"
+                id="section2"
+                aria-expanded="false"
+                aria-controls="section2-panel"
+              >
             Is Frontend Mentor free?
-                <span class="accordion-icon icon-plus">
-                  <img src="./assets/images/icon-plus.svg" alt="plus icon">
+                <span 
+                  class="accordion-icon icon-plus"
+                  aria-hidden="true">
+                  <img 
+                    src="./assets/images/icon-plus.svg" 
+                    alt="plus icon">
                 </span>
-                <span class="accordion-icon icon-minus">
-                  <img src="./assets/images/icon-minus.svg" alt="minus icon">
+                <span 
+                  class="accordion-icon icon-minus hide"
+                  aria-hidden="true"  
+                >
+                  <img 
+                    src="./assets/images/icon-minus.svg"
+                    alt="minus icon"
+                  >
                 </span>
               </button>
             </h3>
@@ -98,7 +108,8 @@
               id="section2-panel"
               role="region"
               aria-labelledby="section2"
-              >
+              hidden
+            >
               <p>Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
                 option providing access to a range of projects suitable for all skill levels.</p>
             </div>
@@ -106,19 +117,19 @@
 
           <!-- panel 3 -->
           <section>
-            <h3 class="accordion__header" collapsed>
+            <h3 class="accordion__header collapsed">
               <button 
               type="button"
               class="accordion__trigger"
               id="section3"
-              aria-expanded="true"
+              aria-expanded="false"
               aria-controls="section3-panel"
             >
             Can I use Frontend Mentor projects in my portfolio?
-                <span class="accordion-icon icon-plus">
+                <span class="accordion-icon icon-plus" aria-hidden="true">
                   <img src="./assets/images/icon-plus.svg" alt="plus icon">
                 </span>
-                <span class="accordion-icon icon-minus">
+                <span class="accordion-icon icon-minus hide" aria-hidden="true">
                   <img src="./assets/images/icon-minus.svg" alt="minus icon">
                 </span>
               </button>
@@ -128,6 +139,7 @@
               id="section3-panel"
               role="region"
               aria-labelledby="section3"
+              hidden
               >
               <p>Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
                 way to showcase your skills to potential employers!</p>
@@ -136,19 +148,19 @@
 
           <!-- panel 4 -->
           <section>
-            <h3 class="accordion__header" collapsed>
+            <h3 class="accordion__header collapsed">
               <button 
               type="button"
               class="accordion__trigger"
               id="section4"
-              aria-expanded="true"
+              aria-expanded="false"
               aria-controls="section4-panel"
             >
             How can I get help if I'm stuck on a Frontend Mentor challenge?
-                <span class="accordion-icon icon-plus">
+                <span class="accordion-icon icon-plus" aria-hidden="true">
                   <img src="./assets/images/icon-plus.svg" alt="plus icon">
                 </span>
-                <span class="accordion-icon icon-minus">
+                <span class="accordion-icon icon-minus hide" aria-hidden="true">
                   <img src="./assets/images/icon-minus.svg" alt="minus icon">
                 </span>
               </button>
@@ -158,6 +170,7 @@
               id="section4-panel"
               role="region"
               aria-labelledby="section4"
+              hidden
               >
               <p>The best place to get help is inside Frontend Mentor's Discord community. There's a help 
                 channel where you can ask questions and seek support from other community members.</p>
