@@ -74,17 +74,15 @@ main {
   display: flex;
 }
 
-/* .collapsed + .accordion__panel {
+.collapsed + .accordion__panel,
+.collapsed .icon-minus,
+.icon-plus {
   display: none;
-} */
+}
 
-/* .hide {
-  display: none;
-} */
-
-/* .show {
+.collapsed .icon-plus {
   display: block;
-} */
+}
 
 .fm-byline {
   font-size: 0.75rem;

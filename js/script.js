@@ -6,8 +6,8 @@ tabs.forEach( tab => {
 })
 
 
-// # Model
-// Source: https://accessible-components.sparkbox.com/accordion
+// # Resource
+// https://accessible-components.sparkbox.com/accordion
 
 function toggleAccordion(e){
 
@@ -16,18 +16,25 @@ function toggleAccordion(e){
   // ! e.target.getAttribute('aria-expanded') returns string, not a boolean
 
   /* * 
-  * To have single panel open at a time, use
-  * collapseAll method and comment out `else` block
+  * To have a single panel open at a time, enable the
+  * collapseAll method and comment out the 'else' block
   */
-
   // collapseAll()
 
+
+  /* *
+   * Adding the 'hidden' attribute to the div/panel markup
+   * prevents users and screenreaders from accessing hidden
+   * panels inadvertently
+  */
   if(isPanelOpen){
-    e.target.setAttribute('aria-expanded', false)
-    e.target.parentElement.classList.add('collapsed')
+    e.target.setAttribute('aria-expanded', false) // btn
+    e.target.parentElement.classList.add('collapsed') // h3
+    e.target.parentElement.nextElementSibling.hidden = isPanelOpen // div
   } else {
     e.target.setAttribute('aria-expanded', true)
     e.target.parentElement.classList.remove('collapsed')
+    e.target.parentElement.nextElementSibling.hidden = isPanelOpen
   } 
 }
 
@@ -42,7 +49,7 @@ function toggleAccordion(e){
 
 
 // # Alternate Approach
-// Source: https://www.aditus.io/patterns/accordion/
+// https://www.aditus.io/patterns/accordion/
 
 /* 
 function toggleAccordion(e){
