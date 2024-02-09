@@ -74,6 +74,13 @@ main {
   display: flex;
 }
 
+/* CSS Tricks: Handling sub elements of clickable things
+https://css-tricks.com/slightly-careful-sub-elements-clickable-things/
+*/
+button > * {
+  pointer-events: none;
+}
+
 .collapsed + .accordion__panel,
 .collapsed .icon-minus,
 .icon-plus {

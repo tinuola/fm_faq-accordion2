@@ -32,6 +32,6 @@ Live Site: [tinuola.github.io/fm_faq-accordion2/](https://tinuola.github.io/fm_f
   - [My favourite accessible accordion pattern](https://www.hassellinclusion.com/blog/accessible-accordion-pattern/) _(Hassell Inclusion Blog)_
   - [Sparkbox Accessible Components: Accordion](https://accessible-components.sparkbox.com/accordion)
   - [Aditus: Accessible Accordion](https://www.aditus.io/patterns/accordion/)
-
+- [Handling Sub Elements of Clickable Things](https://css-tricks.com/slightly-careful-sub-elements-clickable-things/) _(CSS Tricks)_
 
 _Visit my [Frontend Mentor profile](https://www.frontendmentor.io/profile/tinuola) to view other challenges I've completed!_

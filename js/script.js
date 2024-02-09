@@ -10,7 +10,6 @@ tabs.forEach( tab => {
 // https://accessible-components.sparkbox.com/accordion
 
 function toggleAccordion(e){
-
   let isPanelOpen = e.target.getAttribute('aria-expanded') === 
   'true' || false;
   // ! e.target.getAttribute('aria-expanded') returns string, not a boolean
