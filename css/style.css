@@ -1,6 +1,7 @@
 :root {
   --dark-purple: hsl(292, 42%, 14%);
   --gray-purple: hsl(292, 16%, 49%);
+  --light-purple: hsl(294, 19%, 69%);
   --light-pink: hsl(275, 100%, 97%);
   --font: 'Work Sans', sans-serif;
 }
@@ -43,35 +44,72 @@ body {
   align-items: center;
   font-family: var(--font);
   background-color: var(--light-pink);
-  /* background-image: url('/assets/images/background-pattern-mobile.svg'); */
+  background-image: url('/assets/images/background-pattern-mobile.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-@media(min-width: 768px){
-  /* body {
+@media (min-width: 768px) {
+  body {
     background-image: url('/assets/images/background-pattern-desktop.svg');
-  } */
+  }
 }
 
 .container {
   background-color: #fff;
-  min-width: 330px;
-  max-width: 600px;
-  width: 100%;
+  min-width: 327px;
+  /* width: 330px; */
+  /* width: 100%; */
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 4rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
 }
 
 .container header {
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 1.5rem;
 }
 
 main {
+}
 
+.accordion-group section {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--light-purple);
+}
+
+.accordion-group section:first-of-type {
+  padding-top: 0;
+}
+
+.accordion-group section:last-of-type {
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 
 .accordion__trigger {
   display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  border: 0;
+  background-color: transparent;
+  text-align: left;
+  width: 100%;
+}
+
+.accordion__panel {
+  padding-top: 1.5rem;
+}
+
+.accordion-icon {
+  padding-left: 1.5rem;
 }
 
 /* CSS Tricks: Handling sub elements of clickable things
@@ -91,6 +129,10 @@ button > * {
   display: block;
 }
 
+.fm-byline-row {
+  padding: 2rem 0;
+}
+
 .fm-byline {
   font-size: 0.75rem;
   letter-spacing: 1px;
@@ -99,4 +141,5 @@ button > * {
 }
 
 .fm-byline,
-.fm-byline a {}
+.fm-byline a {
+}
