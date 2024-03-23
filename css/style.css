@@ -67,6 +67,7 @@ body {
 header h2 {
   font-size: 2rem;
   margin-left: 1.5rem;
+  color: var(--dark-purple);
 }
 
 @media (min-width: 650px) {
@@ -107,6 +108,7 @@ header h2 {
   justify-content: space-between;
   font-size: 1rem;
   line-height: 1.25;
+  color: var(--dark-purple);
   font-weight: 600;
   border: 0;
   background-color: transparent;
