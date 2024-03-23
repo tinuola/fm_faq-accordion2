@@ -9,8 +9,6 @@ tabs.forEach((tab) => {
 
 function toggleAccordion(e) {
   let isPanelOpen = e.target.getAttribute('aria-expanded') === 'true' || false
-  console.log(e.target.getAttribute('aria-expanded'))
-  console.log(isPanelOpen)
   // ! e.target.getAttribute('aria-expanded') returns string, not a boolean
 
   /* *
