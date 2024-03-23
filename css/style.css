@@ -3,6 +3,7 @@
   --gray-purple: hsl(292, 16%, 49%);
   --pink: hsl(281, 83%, 54%);
   --light-pink: hsl(274, 100%, 97%);
+  --shadow: rgba(80, 0, 118, 0.1);
   --font: 'Work Sans', sans-serif;
 }
 
@@ -66,6 +67,7 @@ body {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  box-shadow: 0 32px 56px var(--shadow);
 }
 
 .container header {
