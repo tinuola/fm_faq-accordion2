@@ -149,6 +149,7 @@ header h2 {
 @media (min-width: 650px) {
   .accordion__trigger {
     font-size: 1.125rem;
+    line-height: 1.7;
   }
 
   .accordion__panel p {
