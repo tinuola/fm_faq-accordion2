@@ -40,7 +40,7 @@
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 140px 90px 1fr 1fr;
+  grid-template-rows: 130px 100px 1fr 1fr;
   font-family: var(--font);
   font-weight: 400;
   background-color: var(--light-pink);
@@ -82,7 +82,7 @@ header h2 {
 
 @media (min-width: 650px) {
   body {
-    grid-template-rows: 230px 90px 1fr auto;
+    grid-template-rows: 180px 140px 1fr auto;
   }
 
   .deco-bground {
