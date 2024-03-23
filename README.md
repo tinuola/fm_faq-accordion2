@@ -1,4 +1,4 @@
-# Frontend Mentor: Challenge Name
+## Frontend Mentor: FAQ Accordion (v2)
 
 Solution to the _[FAQ Accordion](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz)_ challenge on Frontend Mentor.
 
@@ -17,11 +17,13 @@ Live Site: [tinuola.github.io/fm_faq-accordion2/](https://tinuola.github.io/fm_f
 
 ### Retrospective
 
--
+- Repeat of [FAQ Accordion](https://github.com/tinuola/fm_faq-accordion), different (easier?) design element
+- Keyboard accessibility practice
 
 ### Enhancement(s)
 
-- Animate accordion behavior
+- To do:
+  - Animate accordion behavior
 
 ### Tools & Resources
 
