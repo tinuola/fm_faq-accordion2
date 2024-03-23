@@ -1,12 +1,13 @@
 :root {
   --dark-purple: hsl(292, 42%, 14%);
   --gray-purple: hsl(292, 16%, 49%);
-  --light-purple: hsl(294, 19%, 69%);
-  --light-pink: hsl(275, 100%, 97%);
+  --pink: hsl(281, 83%, 54%);
+  --light-pink: hsl(274, 100%, 97%);
   --font: 'Work Sans', sans-serif;
 }
 
 /* Accessibility */
+
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
@@ -39,36 +40,22 @@
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  /* grid-template-rows: 1fr auto; */
   justify-items: center;
   align-items: center;
   font-family: var(--font);
+  font-weight: 400;
   background-color: var(--light-pink);
-  background-image: url('/assets/images/background-pattern-mobile.svg');
+  background-image: url('../assets/images/background-pattern-mobile.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-@media (min-width: 768px) {
-  body {
-    background-image: url('/assets/images/background-pattern-desktop.svg');
-  }
-}
-
 .container {
   background-color: #fff;
-  min-width: 327px;
-  /* width: 330px; */
-  /* width: 100%; */
+  width: 327px;
   border-radius: 8px;
   padding: 1.5rem;
-  margin: 4rem 1.5rem;
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 600px;
-  }
+  margin: 8.875rem 1.5rem 6.875rem 1.5rem;
 }
 
 .container header {
@@ -77,12 +64,33 @@ body {
   margin-bottom: 1.5rem;
 }
 
-main {
+header h2 {
+  font-size: 2rem;
+  margin-left: 1.5rem;
 }
+
+@media (min-width: 650px) {
+  body {
+    background-image: url('../assets/images/background-pattern-desktop.svg');
+  }
+
+  .container {
+    max-width: 600px;
+    width: 100%;
+    padding: 2.5rem;
+    margin: 10.4375rem 1.5rem 8.4375rem 1.5rem;
+  }
+
+  header h2 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Accordion */
 
 .accordion-group section {
   padding: 1.25rem 0;
-  border-bottom: 1px solid var(--light-purple);
+  border-bottom: 1px solid var(--light-pink);
 }
 
 .accordion-group section:first-of-type {
@@ -98,22 +106,43 @@ main {
   display: flex;
   justify-content: space-between;
   font-size: 1rem;
+  line-height: 1.25;
+  font-weight: 600;
   border: 0;
   background-color: transparent;
   text-align: left;
   width: 100%;
 }
 
+.accordion__trigger:hover {
+  color: var(--pink);
+}
+
 .accordion__panel {
   padding-top: 1.5rem;
+}
+
+.accordion__panel p {
+  font-size: 0.875rem;
+  color: var(--gray-purple);
 }
 
 .accordion-icon {
   padding-left: 1.5rem;
 }
 
-/* CSS Tricks: Handling sub elements of clickable things
-https://css-tricks.com/slightly-careful-sub-elements-clickable-things/
+@media (min-width: 650px) {
+  .accordion__trigger {
+    font-size: 1.125rem;
+  }
+
+  .accordion__panel p {
+    font-size: 1rem;
+  }
+}
+
+/* CSS Tricks: 
+Handling sub elements of clickable things
 */
 button > * {
   pointer-events: none;
@@ -129,17 +158,19 @@ button > * {
   display: block;
 }
 
+/* Footer */
+
 .fm-byline-row {
-  padding: 2rem 0;
+  padding-bottom: 1.25rem;
 }
 
 .fm-byline {
   font-size: 0.75rem;
   letter-spacing: 1px;
-  line-height: 1.5;
   text-align: center;
 }
 
 .fm-byline,
 .fm-byline a {
+  color: var(--dark-purple);
 }
